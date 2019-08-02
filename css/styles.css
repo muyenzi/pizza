@@ -1,5 +1,5 @@
-body {
-    background-image:url("https://scontent-lga3-1.cdninstagram.com/vp/b85d08a6bfa81db41c70ea985f812f08/5DDAB0F7/t51.2885-15/e35/26152948_1030000073806099_8435329659268235264_n.jpg?_nc_ht=scontent-lga3-1.cdninstagram.com");
+#home {
+    /* background-image:url("https://scontent-lga3-1.cdninstagram.com/vp/b85d08a6bfa81db41c70ea985f812f08/5DDAB0F7/t51.2885-15/e35/26152948_1030000073806099_8435329659268235264_n.jpg?_nc_ht=scontent-lga3-1.cdninstagram.com"); */
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -30,4 +30,9 @@ ul {
   /* Change the link color to #111 (black) on hover */
   li a:hover {
     background-color: #111;
+  }
+
+  #order {
+   height: 980px;
+   
   }

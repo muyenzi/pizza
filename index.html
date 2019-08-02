@@ -11,18 +11,60 @@
     <script src="js/scripts.js"></script>
 </head>
 <body>
+     <div id="home">
+        <div class="nav">
+                <nav>
+                      <ul>
+                              <li><a href="#index.html">Home</a></li>
+                              <li><a href="#about">About</a></li>
+                              <li><a href="#order">Order</a></li>
+                            </ul>
+                </nav>
+        </div>
     <h1>PIZZA EXPRESS</h1>
-    <h2>Surround yourself with pizza, not negativity.</h2>
-  <div class="nav">
-      <nav>
-            <ul>
-                    <li><a href="default.asp">Home</a></li>
-                    <li><a href="news.asp">News</a></li>
-                    <li><a href="contact.asp">Contact</a></li>
-                    <li><a href="about.asp">About</a></li>
-                  </ul>
-      </nav>
-  </div>  
+    <h2>Surround yourself with pizza, not negativity.</h2> 
+  </div>
+  <div class="container" id="order">
+  <form class="form-group">
+        <label for="pizzaname">Pizza </label><br>
+        <select id="pizzas"><br>
+                <option value="none"></option>
+                <option value="pizza1">Chicken Bacon </option>
+                <option value="pizza2">Hawaiian</option>
+                <option value="pizza3">4 Season </option>
+                <option value="pizz4">Pepperoni</option>
+                <option value="pizza5">Vegetarian</option>
+        </select><br><br>
+        <label for="size">Size</label><br>
+        <select id="pizzasize"><br>
+                <option value="none"></option>
+                <option value="small">Small </option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+        </select><br><br>
+        <label for="toppings">Toppings</label><br>
+        <select id="pizzatoppings"><br>
+                <option value="none"></option>
+                <option value="crust1">Spinach</option>
+                <option value="crust2">Mushrooms</option>
+                <option value="crust3">Onions</option>
+                <option value="crust4">Sausage</option>
+                <option value="crust5">cheese</option>
+        </select><br><br>
+        <label for="crust">Crust</label><br>
+        <select id="pizzacrust"><br>
+                <option value="none"></option>
+                <option value="crust1">Spinach</option>
+                <option value="crust2">Mushrooms</option>
+                <option value="crust3">Onions</option>
+                <option value="crust4">Sausage</option>
+                <option value="crust5">cheese</option>
+        </select><br>
+    
+
+
+  </form> 
+</div>
     
 </body>
 </html>
