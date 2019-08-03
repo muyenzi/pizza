@@ -1,19 +1,24 @@
 #home {
-    background-image:url("https://wallpapercave.com/wp/wp3603003.jpg"); 
+    background-image:url("https://wpblink.com/sites/default/files/wallpaper/food/68877/pizza-wallpapers-hd-68877-5204185.png"); 
     background-repeat: no-repeat;
     background-size: cover;
     height: 970px;
 
 }
-h1{
-    color: 
+.header{
+    color: white;
+    text-align: center;
+   
+    margin-top:25%;
+    /* background-color:black;
+    opacity:0.3; */
 }
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    /* background-color: #333; */
   }
   
   li {
@@ -26,6 +31,7 @@ ul {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size:30px;
   }
   
   /* Change the link color to #111 (black) on hover */
