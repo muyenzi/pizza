@@ -26,49 +26,52 @@
     <h2 style="font-size: 50px;">Surround yourself with pizza, not negativity.</h2> 
   </div>
      </div>
-  <div id="about" class="container"><br><br>
-    <h2>Menu</h2>
-    <p>Welcome to Ray's Pizzeria.This is the home pizzas ,Here you can order any pizza of your choice and you can choose the size,toppings and crust of your pizza.<br>
+  <div id="about" >
+  <div class="container" style="background-color:white;"><br>
+    <h2 style="font-size:30px;">Menu</h2>
+    <p style="font-size:20px;">Welcome to Ray's Pizzeria.<br>This is the home pizzas ,Here you can order any pizza of your choice <br>and you can choose the size,toppings and crust of your pizza.<br>
        You just have to click on the order page then your order will be delivered to you as quick as possible.</p>
       <div class="row"><br>
           <div class="col-md-6">
               <img src="images/piz1.jpg" width:90% height="200px">
-              <p>Chicken Bacon</p>
+              <p>Chicken Bacon <br>$10</p>
+              
           </div>
           <div class="col-md-6">
                 <img src="images/piz2.jpg" width:90% height="200px">
-                <p>Hawaiian</p>
+                <p>Hawaiian <br>$12</p>
             </div>
       </div>
       <div class="row">
             <div class="col-md-6">
                     <img src="images/4seas.jpg" width:90% height="200px">
-                    <p>4 Season</p>
+                    <p>4 Season <br>$15</p>
                 </div>
             
                     <div class="col-md-6">
                         <img src="images/peri.jpg" width:90% height="200px">
-                        <p>Peri-peri</p>
+                        <p>Peri-peri <br>$13</p>
                     </div>
       </div>
                     <div class="row">
                     <div class="col-md-6">
                           <img src="images/veg.jpg" width:90% height="200px">
-                          <p>Vegetarian</p>
+                          <p>Vegetarian <br>$10</p>
                       </div>
                       <div class="col-md-6">
                               <img src="images/piz4.jpg" width:90% height="200px">
-                              <p>Pepperoni</p>
-                          </div>
-                      </div>
-  </div>
-
-  <div class="container" id="order" >
-      <div class="orderinfo">
-        <p>You can order now !!<br> Just fill the form by inserting in the pizza you would like to have by specifying the toppings;size and crust of choice.<br>
-            THANK YOU FOR CHOOSING US.<em>ENJOY!!</em></p>   
+                              <p>Pepperoni <br>$15</p>
+                          </div><br>
+                      </div><br>
+  </div><br>
+  </div><br><br>
+  <div class="container" id="order" style="background-color:#34495E;"><br>
+      <div class="orderinfo"><br>
+        <p style="text-align:center;font-size:30px;color:white;">You can order now !!<br> 
+            Just fill the form by inserting in the pizza you would like to have by specifying the toppings,size and crust of choice.
+            Thank you for choosing us.<br><em>ENJOY!!</em></p>   
       </div>
-    <div class="well" style="background-color:#85929E;">
+    <div class="well">
   <form class="form-group">
         <label for="pizzaname">Pizza </label><br>
         <select id="pizzas" style="width:30%;height:40px;"><br>
@@ -102,10 +105,17 @@
                 <option value="crust1">Slim</option>
                 <option value="crust2"> Crispy</option>
                 <option value="crust3">Stuffed</option>
-                <option value="crust4">Gluten-free</option>
-        </select><br>
-    
+                <option value="crust4">Gluten-free</option><br>
+        </select><br><br>
+        <label for="quantity" >Number</label><br>
+         <input type="text" value="quantity"><br><br>
 
+         <label for="deliver" >Deliver</label><br>
+         <p>Do you want your pizza to be delivered?</p>
+         <input type="radio" value="yes" name="deliver" for="no">
+         <input type="radio" value="no" name="deliver" for="yes"><br>
+         
+        
 
   </form> 
 </div>
