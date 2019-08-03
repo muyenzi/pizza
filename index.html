@@ -61,10 +61,15 @@
                       </div>
   </div>
 
-  <div class="container" id="order">
+  <div class="container" id="order" >
+      <div class="orderinfo">
+        <p>You can order now !!<br> Just fill the form by inserting in the pizza you would like to have by specifying the toppings;size and crust of choice.<br>
+            THANK YOU FOR CHOOSING US.<em>ENJOY!!</em></p>   
+      </div>
+    <div class="well" style="background-color:#85929E;">
   <form class="form-group">
         <label for="pizzaname">Pizza </label><br>
-        <select id="pizzas"><br>
+        <select id="pizzas" style="width:30%;height:40px;"><br>
                 <option value="none"></option>
                 <option value="pizza1">Chicken Bacon </option>
                 <option value="pizza2">Hawaiian</option>
@@ -75,24 +80,22 @@
 
         </select><br><br>
         <label for="size">Size</label><br>
-        <select id="pizzasize"><br>
+        <select id="pizzasize" style="width:30%;height:40px;"><br>
                 <option value="none"></option>
-                <option value="small">Small </option>
+                <option value="small"  >Small </option>
                 <option value="medium">Medium</option>
                 <option value="large">Large</option>
         </select><br><br>
-        <label for="toppings">Toppings</label><br>
-        <select id="pizzatoppings"><br>
-                <option value="none"></option>
-                <option value="crust1">Spinach</option>
-                <option value="crust2">Mushrooms</option>
-                <option value="crust3">Onions</option>
-                <option value="crust4">Sausage</option>
-                <option value="crust5">cheese</option>
-                <option value="crust5">pineaple</option>
-        </select><br><br>
-        <label for="crust">Crust</label><br>
-        <select id="pizzacrust"><br>
+        <label id="pizzatoppings" for="toppings" style="width:30%;height:40px;">Toppings</label><br>
+                <input type="checkbox" name="top1" value="top1">Spinach<br>
+                <input type="checkbox" name="top2" value="top2">Mushrooms<br>
+                <input type="checkbox" name="top3" value="top3">Onions<br>
+                <input type="checkbox" name="top4" value="top4">Sausage<br>
+                <input type="checkbox" name="top5" value="top5">cheese<br>
+                <input type="checkbox" name="top6" value="top6">Pineaple<br>
+        <br><br>
+        <label for="crust" >Crust</label><br>
+        <select id="pizzacrust" style="width:30%;height:40px;"><br>
                 <option value="none"></option>
                 <option value="crust1">Slim</option>
                 <option value="crust2"> Crispy</option>
@@ -103,6 +106,7 @@
 
 
   </form> 
+</div>
 </div>
    <div id="footer">
        <footer>
