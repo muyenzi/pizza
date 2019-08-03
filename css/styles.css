@@ -35,9 +35,13 @@ ul {
 
   #about  {
     height:970px;
-    
+
   }
   #order {
    height: 980px;
    
+  }
+
+  h2 {
+    font-size: 40px;
   }
