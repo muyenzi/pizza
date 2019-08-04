@@ -34,33 +34,33 @@
       <div class="row"><br>
           <div class="col-md-6">
               <img src="images/piz1.jpg" width:90% height="200px">
-              <p>Chicken Bacon <br>$10</p>
+              <p>Chicken Bacon <br>$5</p>
               
           </div>
           <div class="col-md-6">
                 <img src="images/piz2.jpg" width:90% height="200px">
-                <p>Hawaiian <br>$12</p>
+                <p>Hawaiian <br>$6</p>
             </div>
       </div>
       <div class="row">
             <div class="col-md-6">
                     <img src="images/4seas.jpg" width:90% height="200px">
-                    <p>4 Season <br>$15</p>
+                    <p>4 Season <br>$8</p>
                 </div>
             
                     <div class="col-md-6">
                         <img src="images/peri.jpg" width:90% height="200px">
-                        <p>Peri-peri <br>$13</p>
+                        <p>Peri-peri <br>$6</p>
                     </div>
       </div>
                     <div class="row">
                     <div class="col-md-6">
                           <img src="images/veg.jpg" width:90% height="200px">
-                          <p>Vegetarian <br>$10</p>
+                          <p>Vegetarian <br>$5</p>
                       </div>
                       <div class="col-md-6">
                               <img src="images/piz4.jpg" width:90% height="200px">
-                              <p>Pepperoni <br>$15</p>
+                              <p>Pepperoni <br>$8</p>
                           </div><br>
                       </div><br>
   </div><br>
@@ -76,37 +76,37 @@
   <form class="form-group">
         <label for="pizzaname">Pizza </label><br>
         <select id="pizzas" style="width:30%;height:40px;"><br>
-                <option value="none"></option>
-                <option value="pizza1">Chicken Bacon </option>
-                <option value="pizza2">Hawaiian</option>
-                <option value="pizza3">4 Season </option>
-                <option value="pizz4">Pepperoni</option>
-                <option value="pizza5">Vegetarian</option>
-                <option value="pizza6">Peri-peri</option>
+                <option id="none"></option>
+                <option id="pizza1">Chicken Bacon </option>
+                <option id="pizza2">Hawaiian</option>
+                <option id="pizza3">4 Season </option>
+                <option id="pizz4">Pepperoni</option>
+                <option id="pizza5">Vegetarian</option>
+                <option id="pizza6">Peri-peri</option>
 
         </select><br><br>
         <label for="size">Size</label><br>
         <select id="pizzasize" style="width:30%;height:40px;"><br>
-                <option value="none"></option>
-                <option value="small"  >Small </option>
-                <option value="medium">Medium</option>
-                <option value="large">Large</option>
+                <option id="none"></option>
+                <option id="small">Small </option>
+                <option id="medium">Medium</option>
+                <option id="large">Large</option>
         </select><br><br>
         <label id="pizzatoppings" for="toppings" style="width:30%;height:40px;">Toppings</label><br>
-                <input type="checkbox" name="top1" value="top1">Spinach<br>
-                <input type="checkbox" name="top2" value="top2">Mushrooms<br>
-                <input type="checkbox" name="top3" value="top3">Onions<br>
-                <input type="checkbox" name="top4" value="top4">Sausage<br>
-                <input type="checkbox" name="top5" value="top5">cheese<br>
-                <input type="checkbox" name="top6" value="top6">Pineaple<br>
+                <input type="checkbox" name="top1" id="top1">Spinach<br>
+                <input type="checkbox" name="top2" id="top2">Mushrooms<br>
+                <input type="checkbox" name="top3" id="top3">Onions<br>
+                <input type="checkbox" name="top4" id="top4">Sausage<br>
+                <input type="checkbox" name="top5" id="top5">cheese<br>
+                <input type="checkbox" name="top6" id="top6">Pineaple<br>
         <br><br>
         <label for="crust" >Crust</label><br>
         <select id="pizzacrust" style="width:30%;height:40px;"><br>
-                <option value="none"></option>
-                <option value="crust1">Slim</option>
-                <option value="crust2"> Crispy</option>
-                <option value="crust3">Stuffed</option>
-                <option value="crust4">Gluten-free</option><br>
+                <option id="none"></option>
+                <option id="crust1">Slim</option>
+                <option id="crust2"> Crispy</option>
+                <option id="crust3">Stuffed</option>
+                <option id="crust4">Gluten-free</option><br>
         </select><br><br>
         <label for="quantity" >Number</label><br>
         <p>Enter the number of pizza you want</p>
@@ -131,9 +131,7 @@
          <label for="yes">Yes</label>
          <input type="radio" name="deliver" id="yes" value="yes"><br>
          
-         <button type="submit" id="orderNow"></button>
-        
-
+         <button type="submit" id="orderNow">Check Out</button>
   </form> 
 </div>
 </div>
