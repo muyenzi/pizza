@@ -6,132 +6,148 @@ function Order(pizzas,size,topp,crust,quantity,deliver) {
     this.pizzaQuantity=quantity;
     this.pizzaDeliver= deliver;
   }
-  // Next, we'll add our new Address constructor:
-  
-//   function Address(street, city, county) {
-//     this.street = street;
-//     this.city = city;
-//     this.county = county;
-//   }
-  
 
-  Address.prototype.fullOrder = function() {
-    return this.pizzaName + ", " + this.pizzaToppings + ", " + this.pizzaSize +" ," +this.pizzaCrust + ", " + this.pizzaQuantity + ", " + this.pizzaDeliver;
-  }
+//   order.prototype.fullOrder = function() {
+//     return this.pizzaName + ", " + this.pizzaToppings + ", " + this.pizzaSize +" ," +this.pizzaCrust + ", " + this.pizzaQuantity + ", " + this.pizzaDeliver;
+//   }
 
    // user interface logic
    $(document).ready(function() {
+       var pizzaTopps[];
 
     $("button#orderNow").click(function() {
        //pizza name
-       if($('#pizza1:checked').val()){
-        var prix='$10';
+    if($('#pizza1:checked').val())
+    {
+        var order1='$5';
         var pizzas=$('#pizza1').val(); + " "+ "price=$5"
         console.log(pizzas);
     }
-    if($('#pizza2:checked').val()){
-        var prix='$12';
+    else if($('#pizza2:checked').val())
+    {
+        var order1='$6';
         var pizzas=$('#pizza2').val(); + " "+ "price=$6"
         console.log(pizzas);
     }
-    if($('#pizza3:checked').val()){
-        var prix='$15';
+    else if($('#pizza3:checked').val())
+    {
+        var order1='$8';
         var pizzas=$('#pizza3').val(); + " "+ "price=$8"
         console.log(spizzas);
     }
-    if($('#pizza4:checked').val()){
-        var prix='$13';
+    else if($('#pizza4:checked').val())
+    {
+        var order1='$6';
         var size=$('#pizza4').val(); + " "+ "price=$6"
         console.log();
     }
-    if($('#pizza5:checked').val()){
-        var prix='$5';
+    else if($('#pizza5:checked').val())
+    {
+        var order1='$5';
         var pizzas=$('#pizza5').val(); + " "+ "price=$5"
         console.log(pizzas);
     }
-    if($('#pizza6:checked').val()){
-        var prix='$8';
+    else if($('#pizza6:checked').val()){
+        var order1='$8';
         var pizzas=$('#pizza6').val(); + " "+ "price=$8"
         console.log(pizzas);
     }
+    else
+    {
+      console.log("invalid input");
+    }
         //pizza size
-        if($('#small:checked').val()){
-            var prix='$2';
+    if($('#small:checked').val()){
+            var order2='$2';
             var size=$('#small').val(); + " "+ "price=$1"
             console.log(size);
-        }
-        if($('#medium:checked').val()){
-            var prix='$2';
+    }
+    else if($('#medium:checked').val()){
+            var order2='$2';
             var size=$('#medium').val(); + " "+ "price=$2"
             console.log(size);
         }
-        if($('#large:checked').val()){
-            var prix='$2';
+       else if($('#large:checked').val()){
+            var order2='$2';
             var size=$('#large').val(); + " "+ "price=$3"
             console.log(size);
         }
+        else {
+            console.log("invalid input");
+        }
          //pizza toppings
-       if($('#top1:checked').val()){
-        var prix='$1';
-        var topp=$('#top1').val(); + " "+ "price=$1"
-        console.log(topp);
+         console.log(pizzaTopps);
+         var order3=0;
+    for(var i=0; i<pizzaTopps.length ;i++) 
+    {
+      if(pizzaTopps[i]=="Spinach")
+      {
+         order3 +='$1';
     }
-    if($('#top2:checked').val()){
-        var prix='$1';
-        var topp=$('#top2').val(); + " "+ "price=$1"
-        console.log(topp);
+    if(pizzaTopps[i]=="Mushrooms")
+    {
+       order3 +='$2';
     }
-    if($('#top3:checked').val()){
-        var prix='$1';
-        var topp=$('#top3').val(); + " "+ "price=$1"
-        console.log(topp);
+    if(pizzaTopps[i]=="Onions")
+      {
+         order3 +='$1';
     }
-    if($('#top4:checked').val()){
-        var prix='$2';
-        var topp=$('#top4').val(); + " "+ "price=$2"
-        console.log(topp);
+    if(pizzaTopps[i]=="Sausage")
+      {
+         order3 +='$3';
     }
-    if($('#top5:checked').val()){
-        var prix='$1';
-        var topp=$('#top5').val(); + " "+ "price=$1"
-        console.log(topp);
+    if(pizzaTopps[i]=="Cheese")
+      {
+         order3 +='$3';
     }
-    if($('#top6:checked').val()){
-        var prix='$2';
-        var topp =$('#top6').val(); + " "+ "price=$2"
-        console.log(topp);
+    if(pizzaTopps[i]=="Pineaple")
+      {
+         order3 +='$2';
+    }
+    else {
+        console.log("invalid input");
     }
      //pizza crust
      if($('#crust1:checked').val()){
-        var prix='$1';
-        var size=$('#crust1').val(); + " "+ "price=$1"
-        console.log();
+        var order4='$1';
+        var crust=$('#crust1').val(); + " "+ "price=$1"
+        console.log(crust );
     }
-    if($('#crust2:checked').val()){
-        var prix='$2';
-        var size=$('#crust2').val(); + " "+ "price=$2"
-        console.log();
+    else if($('#crust2:checked').val()){
+        var order4='$2';
+        var crust=$('#crust2').val(); + " "+ "price=$2"
+        console.log(crust);
     }
-    if($('#crust3:checked').val()){
-        var prix='$1';
-        var size=$('#crust3').val(); + " "+ "price=$1"
-        console.log();
+    else if($('#crust3:checked').val()){
+        var order4='$1';
+        var crust=$('#crust3').val(); + " "+ "price=$1"
+        console.log(crust);
     }
-    if($('#crust4:checked').val()){
-        var prix='$3';
-        var size=$('#crust4').val(); + " "+ "price=$3"
-        console.log();
+    else if($('#crust4:checked').val()){
+        var order4='$3';
+        var crust=$('#crust4').val(); + " "+ "price=$3"
+        console.log(crust);
     }
+    else {
+        console.log("invalid input");
+    }
+      // pizza delivery
     if($('#no:checked').val()){
-        var prix='$0';
-        var size=$('#no').val(); + " "+ "price=$0"
-        console.log();
+        var order5='$0';
+        var delivery=$('#no').val(); + " "+ "price=$0"
+        console.log(delivery);
     }
-    if($('#yes:checked').val()){
-        var prix='$3';
-        var size=$('#yes').val(); + " "+ "price=$3"
-        console.log();
+    else if($('#yes:checked').val()){
+        var order5='$3';
+        var delivery=$('#yes').val(); + " "+ "price=$3"
+        console.log(delivery);
     }
+    else {
+        console.log("invalid input");
+    }
+    var sum=parseInt(order1)+parseInt(order2)+parseInt(order3)+parseInt(order4)+parseInt(order5);
+    console.log(sum);
+
 });
    });
 
