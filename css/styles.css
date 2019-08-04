@@ -1,3 +1,23 @@
+/* Extra small devices(phomes ,600px and down) */
+@media only screen and (max-width:600px){
+}
+
+/* Small devices (potrait tables and large phones ,600px and up */
+@media only screen and (min-width:600px){    
+}
+
+/* Medium devices (landscape tables , 768px and up */
+@media only screen and (min-width:768px){
+}
+
+/* Large devices (laptop/desktops, 992px and up) */
+@media only screen and (min-width:992px){   
+}
+
+/* Extra large devices (extra big desktops, 1200 and up) */
+@media only screen and (min-width:1200px){    
+}
+
 #home {
     background-image:url("https://wpblink.com/sites/default/files/wallpaper/food/68877/pizza-wallpapers-hd-68877-5204185.png"); 
     background-repeat: no-repeat;
@@ -6,12 +26,13 @@
 
 }
 .header{
-    color: white;
+    /* color: white; */
     text-align: center;
    
     margin-top:25%;
-    /* background-color:black;
-    opacity:0.3; */
+    color: black;
+    /* background-color:black;*/
+    opacity:1;
 }
 ul {
     list-style-type: none;
