@@ -40,12 +40,17 @@ ul {
   }
 
   #about  {
-    height:970px;
-
+    background-image: url("https://wpblink.com/sites/default/files/wallpaper/food/68877/pizza-wallpapers-hd-68877-4281648.png");
+    height: 980px;
+    background-repeat: no-repeat;
+     background-size: cover;
   }
+
   #order {
+   background-image: url("https://wpblink.com/sites/default/files/wallpaper/food/68877/pizza-wallpapers-hd-68877-4281648.png");
    height: 980px;
-   
+   background-repeat: no-repeat;
+    background-size: cover;
   }
 
   h2 {

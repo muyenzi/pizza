@@ -26,7 +26,7 @@
     <h2 style="font-size: 50px;">Surround yourself with pizza, not negativity.</h2> 
   </div>
      </div>
-  <div id="about" >
+  <div id="about" ><br>
   <div class="container" style="background-color:white;"><br>
     <h2 style="font-size:30px;">Menu</h2>
     <p style="font-size:20px;">Welcome to Ray's Pizzeria.<br>This is the home pizzas ,Here you can order any pizza of your choice <br>and you can choose the size,toppings and crust of your pizza.<br>
@@ -64,9 +64,10 @@
                           </div><br>
                       </div><br>
   </div><br>
-  </div><br><br>
-  <div class="container" id="order" style="background-color:#34495E;"><br>
-      <div class="orderinfo"><br>
+  </div><br>
+  <div id="order"><br>
+  <div class="container" >
+      <div class="orderinfo">
         <p style="text-align:center;font-size:30px;color:white;">You can order now !!<br> 
             Just fill the form by inserting in the pizza you would like to have by specifying the toppings,size and crust of choice.
             Thank you for choosing us.<br><em>ENJOY!!</em></p>   
@@ -108,16 +109,33 @@
                 <option value="crust4">Gluten-free</option><br>
         </select><br><br>
         <label for="quantity" >Number</label><br>
-         <input type="text" value="quantity"><br><br>
-
+        <p>Enter the number of pizza you want</p>
+        <select id="quantity" style="width:30%;height:40px;">
+        <option id="none"></option>
+        <option id="un">1</option>
+        <option id="deux">2</option>
+        <option id="trois">3</option>
+        <option id="quatre">4</option>
+        <option id="cinq">5</option>
+        <option id="six">6</option>
+        <option id="sept">7</option>
+        <option id="eight">8</option>
+        <option id="nine">9</option>
+        <option id="dix">10</option><br>
+    </select>
+       <br>
          <label for="deliver" >Deliver</label><br>
          <p>Do you want your pizza to be delivered?</p>
-         <input type="radio" value="yes" name="deliver" for="no">
-         <input type="radio" value="no" name="deliver" for="yes"><br>
+         <label for="no">No</label>
+         <input type="radio" name="deliver" id="no" value="no"> <br>
+         <label for="yes">Yes</label>
+         <input type="radio" name="deliver" id="yes" value="yes"><br>
          
+         <button></button>
         
 
   </form> 
+</div>
 </div>
 </div>
    <div id="footer">
