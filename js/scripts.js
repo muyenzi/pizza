@@ -12,7 +12,8 @@ function Order(pizzas,size,topp,crust,quantity,deliver) {
 //   }
 
    // user interface logic
-   $(document).ready(function() {
+   $(document).ready(function() 
+   {
        var pizzaTopps[];
 
     $("button#orderNow").click(function() {
@@ -76,7 +77,7 @@ function Order(pizzas,size,topp,crust,quantity,deliver) {
             console.log("invalid input");
         }
          //pizza toppings
-         console.log(pizzaTopps);
+         console.log(pizzaTopps[]);
          var order3=0;
     for(var i=0; i<pizzaTopps.length ;i++) 
     {
@@ -106,6 +107,8 @@ function Order(pizzas,size,topp,crust,quantity,deliver) {
     }
     else {
         console.log("invalid input");
+    }
+    console.log(oder3);
     }
      //pizza crust
      if($('#crust1:checked').val()){
@@ -147,9 +150,9 @@ function Order(pizzas,size,topp,crust,quantity,deliver) {
     }
     var sum=parseInt(order1)+parseInt(order2)+parseInt(order3)+parseInt(order4)+parseInt(order5);
     console.log(sum);
-
+    });
 });
-   });
+
 
 
 
