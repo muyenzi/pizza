@@ -69,7 +69,7 @@ ul {
 
   #order {
    background-image: url("https://wpblink.com/sites/default/files/wallpaper/food/68877/pizza-wallpapers-hd-68877-4281648.png");
-   height: 980px;
+   height: 1100px;
    background-repeat: no-repeat;
     background-size: cover;
   }
@@ -80,6 +80,7 @@ ul {
   .footer {
     text-align: center;
     color: black;
+    top:0;
   }
   .all{
     display: flex;
