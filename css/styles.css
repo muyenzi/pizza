@@ -77,3 +77,19 @@ ul {
   h2 {
     font-size: 40px;
   }
+  .footer {
+    text-align: center;
+    color: black;
+  }
+  .all{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form-group {
+    width: 70%;
+  }
+  .display {
+    width: 30%;
+    float: right;
+    display: none;
+  }

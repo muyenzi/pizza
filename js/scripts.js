@@ -1,3 +1,5 @@
+
+
 function Order(pizzas,size,topp,crust,quantity,deliver) {
     this.pizzaName= pizzas;
     this.pizzaToppings= topp;
@@ -7,17 +9,29 @@ function Order(pizzas,size,topp,crust,quantity,deliver) {
     this.pizzaDeliver= deliver;
   }
 
-//   order.prototype.fullOrder = function() {
-//     return this.pizzaName + ", " + this.pizzaToppings + ", " + this.pizzaSize +" ," +this.pizzaCrust + ", " + this.pizzaQuantity + ", " + this.pizzaDeliver;
-//   }
+  Order.prototype.fullOrder = function() {
+    return this.pizzaName + ", " + this.pizzaToppings + ", " + this.pizzaSize +" ," +this.pizzaCrust + ", " + this.pizzaQuantity + ", " + this.pizzaDeliver;
+  }
 
    // user interface logic
    $(document).ready(function() 
    {
-       var pizzaTopps[];
-
-    $("button#orderNow").click(function() {
+    var pizzaTopps=[];
+    $('button#orderNow').click(function(event) {
+       
+        event.preventDefault();
        //pizza name
+
+
+
+
+
+
+
+
+
+
+       
     if($('#pizza1:checked').val())
     {
         var order1='$5';
@@ -34,7 +48,7 @@ function Order(pizzas,size,topp,crust,quantity,deliver) {
     {
         var order1='$8';
         var pizzas=$('#pizza3').val(); + " "+ "price=$8"
-        console.log(spizzas);
+        console.log(pizzas);
     }
     else if($('#pizza4:checked').val())
     {
@@ -60,24 +74,24 @@ function Order(pizzas,size,topp,crust,quantity,deliver) {
         //pizza size
     if($('#small:checked').val()){
             var order2='$2';
-            var size=$('#small').val(); + " "+ "price=$1"
+            var size=$('#small').val(); + " "+ "price=$2"
             console.log(size);
     }
     else if($('#medium:checked').val()){
-            var order2='$2';
-            var size=$('#medium').val(); + " "+ "price=$2"
+            var order2='$3';
+            var size=$('#medium').val(); + " "+ "price=$3"
             console.log(size);
         }
        else if($('#large:checked').val()){
-            var order2='$2';
-            var size=$('#large').val(); + " "+ "price=$3"
+            var order2='$4';
+            var size=$('#large').val(); + " "+ "price=$"
             console.log(size);
         }
         else {
             console.log("invalid input");
         }
          //pizza toppings
-         console.log(pizzaTopps[]);
+         console.log(pizzaTopps);
          var order3=0;
     for(var i=0; i<pizzaTopps.length ;i++) 
     {
@@ -108,7 +122,7 @@ function Order(pizzas,size,topp,crust,quantity,deliver) {
     else {
         console.log("invalid input");
     }
-    console.log(oder3);
+    console.log(order3);
     }
      //pizza crust
      if($('#crust1:checked').val()){
@@ -144,14 +158,40 @@ function Order(pizzas,size,topp,crust,quantity,deliver) {
         var order5='$3';
         var delivery=$('#yes').val(); + " "+ "price=$3"
         console.log(delivery);
+        var address=prompt("Enter your location");
     }
     else {
         console.log("invalid input");
     }
+    var quantity=$('select#pizzaquantity').val();
+    console.log(quantity)
     var sum=parseInt(order1)+parseInt(order2)+parseInt(order3)+parseInt(order4)+parseInt(order5);
     console.log(sum);
-    });
+    var newOrder=new Order(pizzas +order1,size + order2,pizzaTopps + order3,crust +order4,quantity,delivery + order5);
+    console.log(newOrder);
+    $("ul#show-all").append("<li><span >" + newOrder.fullOrder() + "</span></li>");
+
+    // $(".").last().click(function() {
+    //   $("#show-checkout").show();
+    //   $("#show-checkout h2").text(newOrder.fullOrder());
+    //   $(".").text(newOrder.pizzaName);
+    //   $(".last-name").text(newContact.);
+    //   $("ul#addresses").text("");
+    //   newContact.addresses.forEach(function(address) {
+    //     $("ul#addresses").append("<li>" + address.street + ", " + address.city + " " + address.county + "</li>");
+    //   });
+    // });
+
+//     $("select#").val("");
+//     $("select#new-last-name").val("");
+//     $("input#new-street").val("");
+//     $("select.new-city").val("");
+//     $("input.new-county").val("");
+
+//   });
 });
+    });
+
 
 
 

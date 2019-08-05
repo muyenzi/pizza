@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pizza Express</title>
+    <title>Ray's Pizzria</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="js/jquery.js"></script>
@@ -33,33 +33,33 @@
        You just have to click on the order page then your order will be delivered to you as quick as possible.</p>
       <div class="row"><br>
           <div class="col-md-6">
-              <img src="images/piz1.jpg" width:90% height="200px">
+            <a href="#order" ><img src="images/piz1.jpg" width:90% height="200px"></a>
               <p>Chicken Bacon <br>$5</p>
               
           </div>
           <div class="col-md-6">
-                <img src="images/piz2.jpg" width:90% height="200px">
+                <a href="#order" ><img src="images/piz2.jpg" width:90% height="200px"></a>
                 <p>Hawaiian <br>$6</p>
             </div>
       </div>
       <div class="row">
             <div class="col-md-6">
-                    <img src="images/4seas.jpg" width:90% height="200px">
+                    <a href="#order" ><img src="images/4seas.jpg" width:90% height="200px"></a>
                     <p>4 Season <br>$8</p>
                 </div>
             
                     <div class="col-md-6">
-                        <img src="images/peri.jpg" width:90% height="200px">
+                            <a href="#order" ><img src="images/peri.jpg" width:90% height="200px"></a>
                         <p>Peri-peri <br>$6</p>
                     </div>
       </div>
                     <div class="row">
                     <div class="col-md-6">
-                          <img src="images/veg.jpg" width:90% height="200px">
+                            <a href="#order" ><img src="images/veg.jpg" width:90% height="200px"></a>
                           <p>Vegetarian <br>$5</p>
                       </div>
                       <div class="col-md-6">
-                              <img src="images/piz4.jpg" width:90% height="200px">
+                            <a href="#order" ><img src="images/piz4.jpg" width:90% height="200px"></a>
                               <p>Pepperoni <br>$8</p>
                           </div><br>
                       </div><br>
@@ -73,7 +73,8 @@
             Thank you for choosing us.<br><em>ENJOY!!</em></p>   
       </div>
     <div class="well">
-  <form class="form-group">
+        <div class="all">
+  <form class="form-group" >
         <label for="pizzaname">Pizza </label><br>
         <select id="pizzas" style="width:30%;height:40px;"><br>
                 <option id="none"></option>
@@ -131,12 +132,34 @@
          <label for="yes">Yes</label>
          <input type="radio" name="deliver" id="yes" value="yes"><br>
          
-         <button type="submit" id="orderNow">Check Out</button>
-  </form> 
+         <button class="btn btn-primary" type="submit" id="orderNow">Check Out</button>
+        </form> 
+  <div >
+  <h2>Your Order:</h2>
+  <ul id="show-all">
+<li></li>
+  </ul>
+ </div>
+  <div id="show-checkout" class="display">
+        <h2></h2>
+        <p>pizza name: <span class="pizza-name"></span></p>
+        <p>size: <span class="pizza-size"></span></p>
+        <p>crust: <span class="pizza-crust"></span></p>
+        <p>toppings: <span class="pizza-toppings"></span></p>
+        <p>delivery : <span class="pizza-delivery"></span></p>
+        <ul id="">
+
+        </ul>
+    </div>
+
+</div>
+      </div>
+    </div>
+
 </div>
 </div>
 </div>
-   <div id="footer">
+   <div class="footer">
        <footer>
            <p>Copyright@2019 Ray's Pizzeria |Email:muyenziraissa@gmail.com</p>
        </footer>
