@@ -27,7 +27,7 @@ helps people to order pizzas online and deliver it at their locations.
    The client will get the total amount of his order .
     and If The client wants his pizza to be delivered to him ,he will be alerted to give his address. 
 ## PROJECT LINK
-     https://muyenzi.github.io/project4/
+     https://muyenzi.github.io/pizza/
 ## SUPPORT AND CONTACT
  contact me : muyenziraissa@gmail.com
 
