@@ -90,27 +90,27 @@ console.log(pizzaToppings)
          function myFunction(pizzaToppings){
     for(var i=0; i<pizzaToppings.length ;i++) 
     {
-      if(pizzaToppings[i]==="Spinach")
+      if(pizzaToppings[i]=="Spinach")
       {
          order3 +=100;
          console.log(order3);
     }
-    else if(pizzaToppings[i]==="Mushrooms")
+    else if(pizzaToppings[i]=="Mushrooms")
     {
        order3 +=200;
        console.log(order3);
     }
-    else if(pizzaToppings[i]==="Onions")
+    else if(pizzaToppings[i]=="Onions")
       {
          order3 +=100;
          console.log(order3);
     }
-    else if(pizzaToppings[i]==="Sausage")
+    else if(pizzaToppings[i]=="Sausage")
       {
          order3 +=300;
          console.log(order3);
     }
-    else if(pizzaToppings[i]==="Cheese")
+    else if(pizzaToppings[i]=="Cheese")
       {
          order3 +=300;
          console.log(order3);
