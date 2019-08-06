@@ -186,7 +186,6 @@ console.log(myFunction(pizzaToppings))
     $('#orderNow').click(function(event){
         event.preventDefault();
     })
-    
 });
     });
 
