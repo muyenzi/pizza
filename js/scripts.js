@@ -181,7 +181,7 @@ console.log(myFunction(pizzaToppings))
     console.log(sum);
     var newOrder=new Order(pizzas ,size ,pizzaToppings ,crust ,quantity,delivery );
     console.log(newOrder);
-    $("ul#show-all").append(" total " + "= <br>" + sum + " <br> <li><span >" + newOrder.fullOrder() + " </span></li> " + ' '+ " " + );
+    $("ul#show-all").append(" total " + "= <br>" + sum + " <li><span >" + newOrder.fullOrder() + " </span></li> ");
     $("p#total").append("" + sum + "");
     $('#orderNow').click(function(event){
         event.preventDefault();
