@@ -10,7 +10,7 @@ function Order(pizzas,size,pizzaToppings,crust,quantity,deliver) {
   }
 
   Order.prototype.fullOrder = function() {
-    return "pizza name : "+this.pizzaName + " <br> toppings : " + this.pizzaToppings + "  <br> size : " + this.pizzaSize + " <br> crust :" + this.pizzaCrust + "  <br> number of pizza : " + this.pizzaQuantity + " <br> To be Delivered  : " + this.pizzaDeliver + " <br";
+    return " <br> pizza name : "+this.pizzaName + " <br> toppings : " + this.pizzaToppings + "  <br> size : " + this.pizzaSize + " <br> crust :" + this.pizzaCrust + "  <br> number of pizza : " + this.pizzaQuantity + " <br> To be Delivered  : " + this.pizzaDeliver + " <br> ";
   }
 
    // user interface logic
@@ -181,15 +181,10 @@ console.log(myFunction(pizzaToppings))
     console.log(sum);
     var newOrder=new Order(pizzas ,size ,pizzaToppings ,crust ,quantity,delivery );
     console.log(newOrder);
-    
-    $("ul#show-all").append("<li><span >" + newOrder.fullOrder() + "</span></li>" + ' '+ " " + " total " + "= " + sum + "<br> ");
+    $("ul#show-all").append(" total " + "= <br>" + sum + " <br> <li><span >" + newOrder.fullOrder() + " </span></li> " + ' '+ " " + );
     $("p#total").append("" + sum + "");
-                          
-   
-
     $('#orderNow').click(function(event){
         event.preventDefault();
-        $('#total').show();
     })
     
 });
